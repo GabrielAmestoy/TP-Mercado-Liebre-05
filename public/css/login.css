@@ -1,0 +1,28 @@
+
+.main-formulario #form-Login{
+    display: block; /*el formulario es de tipo block*/
+    background-color: #d9d9d9;
+    margin: auto;
+    width: 70%;
+    min-width: 300px;
+    height: 100%;
+}
+
+.main-formulario #form-Login h2{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.main-formulario #form-Login .nombre-usuario, .password-usuario{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 40px; 
+    border:0px;
+    outline-color: var(--color-celeste);/*cambia de color al presionar sobre el input*/
+}
+
+.main-formulario button:hover{
+    background-color:#0022AA ;
+}

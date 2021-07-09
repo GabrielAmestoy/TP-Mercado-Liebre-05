@@ -1,0 +1,321 @@
+
+/* -------HEADER-------*/
+.home{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+.home header{
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-amarillo);
+}
+.home header .contenedor-01{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.home .logo{
+    width: 50% ;
+    padding: 10px;
+    margin:0;
+}
+.home header .Buscador{
+    width: 50%;
+    padding: 0;
+
+}
+
+.home form{
+    display: flex;
+    justify-content: space-between; /*separa el boton de el input*/
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.home header .Buscador input{
+    width: 100%; /*se le da 100% y aparece lo redactado en el input*/
+    border: 0;
+    color:var(--color-GrisOscuro);
+}
+
+.home header .Buscador button{
+    width: 20px;
+    padding: 2px;
+    border: 0;
+    background-color: #ffffff;
+    color:var(--color-GrisOscuro);
+}
+
+.home header .Compra-sin-tarjeta{
+    width: 100%;
+    text-align:center;
+    padding: 15px;
+    font-family: "Roboto";
+}
+.home .boton-menu{
+    display: block;
+    background-color: var(--color-celeste);
+    margin: auto;
+    color:#ffffff;
+    padding: 10px 15px;
+    border :none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.home header .contenedor-hamburguesa{
+    padding: 20px;
+    font-family: "Roboto";
+}
+
+.home nav{
+    display: none;
+}
+
+/*---------MAIN----------*/
+
+.home main{
+    margin:0;
+    padding-bottom: 10px;
+    background-color:var(--color-GrisClaro);
+
+}
+.home .banner img{
+    width: 100%;
+    height: 100%;
+
+}
+.home .banner{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.home h2{
+    font-family:"Roboto";
+    color: var(--color-GrisOscuro);
+    font-size: 24px;
+}
+.home img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.home .Visita-Oferta{
+    width:290px;
+    margin:auto;
+    padding: 15px 0;
+}
+
+.home main section{
+    background-color:var(--color-GrisClaro);
+    width:90%;
+    margin:auto; /*Centra cada producto(img y div) en mein*/
+}
+
+.home main section article{
+    width:100%;
+    height: 100%;
+    margin: 0 auto 10px auto;       /* Da un espaciado de arriba y abajo y Centra cada producto(img y div) en mein*/
+}
+
+.home main section article div {
+    padding:15px;
+    background-color:#ffffff;
+    border-top:solid 1px var(--color-GrisClaro);
+    position: relative;
+}
+
+.home main section article:last-child{
+    width:100%;
+    height: 100%;
+    margin: 0 auto 0 auto;       /*quito margin-bottom en el ultimo porqu no lo toma y agrego la distancia entre el main y footer desde el main*/
+}
+
+main section article i {
+    color:var(--color-Verde);
+    display: block ;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute ;
+    right: 20px ;
+    top: -15px ;
+    }
+
+.home .precios{
+    font-size: 18px;
+    margin: 0;
+}
+.home .descuentos{
+    font-size: 16px;
+    color:var(--color-Verde);
+    margin: 0;
+
+}
+.home section article:hover .precios,.descuentos {
+    display: inline;
+}
+
+.home .descripcion{
+    display: none;
+    margin:20px 0 0 0;
+    font-size: 16px;
+    color: var(--color-GrisOscuro);
+    font-family:"Roboto";
+}
+
+/*-------FOOTER-------*/
+
+.home footer {
+    width: 100%;
+    font-family: "Roboto"; 
+    text-align: center;
+    margin:0;
+    padding:0px 35px;
+    background-color:#ffffff;
+    color: var(--color-GrisOscuro);
+
+}
+.home footer article{
+    margin-top: 40px;
+}
+.home footer i{
+    font-size: 2rem;
+    color: var(--color-celeste);
+}
+.home footer h4{
+    margin-bottom: 0px;
+}
+.home footer p{
+    margin-top: 0px;
+}
+.home footer .Copyright {
+    margin-top: 40px;
+}
+/*-------TAblet-------*/
+@media (min-width:761px) {
+    .home header .contenedor-01{
+        padding-bottom: 40px;
+    }
+
+    .home nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul{
+        display: flex;
+    }
+    ul li{
+        padding: 12px;
+    }
+    .home header .contenedor-hamburguesa{
+        display: none;
+    }
+    .home .boton-menu{
+        display: none;
+    }
+
+    .home .logo{
+        width: 30% ;
+    }
+
+    .home header .Buscador{
+        width: 30%;
+    }
+
+    .home header .Compra-sin-tarjeta{
+        width: 30%;
+    }
+    .home .Visita-Oferta{
+        width:100%;
+        padding: 30px 0;
+    }
+    .home footer i:hover{
+        color:#4a80cf ;
+     }
+
+    /*responsive products*/
+
+    .home main section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .home section article:hover .precios,.descuentos {
+        display: block;
+    }
+
+    .home main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width:45%;
+        height: 45%;
+        margin: 0px 0px 20px 0px; 
+    }
+    .home main section article:last-child{
+        width:45%;
+        height: 45%;
+        margin: 0px 0px 20px 0px; 
+    }
+    .home main section article:hover{
+        box-shadow: 0px 5px 25px 8px #222222;
+        transition: 0.1s;
+    }
+
+    .home main section article div .descripcion{        
+        display: block;
+        color:transparent;
+        transition-property: color;
+        transition-duration:0.5s;
+    
+    }
+    .home main section article:hover .descripcion{
+        color:var(--color-GrisOscuro);
+    }
+}
+
+/*------Desktop-------*/
+@media (min-width:1024px){
+    /*--MAIN--*/
+    .home main section article{
+        width:22%;
+        height: 20%;
+    }
+    .home main section article:last-child{
+        width:22%;
+        height: 20%;
+    }
+    /*--FOOTER--*/
+    .home footer{
+        padding: 0px;
+    }
+    .home footer section{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .home footer article{
+        width: 30%;
+        margin-top: 60px;
+    }
+    .home footer .Copyright {
+        text-align: left;
+        margin-top: 10px;
+        margin-left:10px;
+    }
+
+}
